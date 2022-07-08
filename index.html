@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
         <div class="whackTitle">
         <h1>
             WELCOME TO WHACK A MOLE! 
@@ -29,12 +28,13 @@
         </div>
         
         <div class ="start">
-            <button onClick="startGame()"> Start Whacking! </button>
+            <button onClick="startGame('#page-start')"> Start Whacking! </button>
         </div>
-        
-        <h1 class="score"> Score: 0</h1>
-        
-    <div class = "game">
+      
+    
+    <h1 class="score"> Score: 0</h1>
+      
+    <div class = "game" id="page-start">
         <div class="hole hole1">
             <div class="mole"></div>
         </div>
@@ -63,10 +63,7 @@
             <div class="mole"></div>
         </div>
     </div>
-    <!-- F O O T E R 
-    <footer class="w3-center w3-light-#ac90f3 w3-padding-32"  style="background-color: black; color: rgb(189, 189, 189)">
-        <h5 class="w3-center"> Made with Love by Proyetei Akanda © 2022 All Rights Reserved </h5>
-    </footer> -->
     <script src="index.js"></script>
+
 </body>
 </html>
