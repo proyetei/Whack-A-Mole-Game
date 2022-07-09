@@ -10,4 +10,6 @@ https://proyetei.github.io/Whack-A-Mole-Game/
 HTML | CSS | JavaScript
 
 # Future Modifications
-Add animations, more visuals and a sound effect when you bonk
+- Add animations and more visuals 
+- a sound effect when you bonk
+- mobile responsiveness 
