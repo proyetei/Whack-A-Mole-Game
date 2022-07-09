@@ -96,6 +96,16 @@ top: 0;
     margin-top: 0%;
     font-family: Raleway;
     }
+
+.time{
+    display: flex;
+    height: 20px;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    font-family: Raleway;
+    color: salmon;
+}
 .game {
     width: 800px;
     height: 400px;

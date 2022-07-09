@@ -5,12 +5,11 @@
  * A function to start the game.
  * A function to “prevent” cheating , once the mole is whacked it should hide again and to set the score.
 */
+const timeTag = document.querySelector(".time span b");
 const moles = document.querySelectorAll('.mole');
 const holes = document.querySelectorAll('.hole'); //matches all the CSS selector hole
 const scoreBoard = document.querySelector('.score'); //matches the CSS selector score
-let lastHole; 
-let timeUp = false;
-let score = 0;
+let lastHole, timeUp = false, score = 0;
 
 //Function to create a random amount of time that the mole will peep for
 //Using math.random
@@ -18,6 +17,23 @@ let score = 0;
 function peepTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
+/*
+document.getElementById("start").addEventListener("click", function(){
+  var timeleft = 15;
+
+  var downloadTimer = setInterval(function function1(){
+  document.getElementById("time").innerHTML = timeleft + 
+  "&nbsp"+"seconds remaining";
+
+  timeleft -= 1;
+  if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      document.getElementById("time").innerHTML = "Time is up!"
+  }
+  }, 1000);
+
+  console.log(countdown);
+}); */
 
 //A function to choose the random hole from which the mole will peep
 
@@ -52,6 +68,7 @@ function startGame() {
   scoreBoard.textContent = 0;
   timeUp = false;
   score = 0;
+  time = 60;
   peep();
   setTimeout(() => timeUp = true, 60000) //starts the game and runs it for 60s
 }
